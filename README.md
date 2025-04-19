@@ -12,11 +12,11 @@ TemanCekin* adalah sebuah website yang akan menjadi teman untuk membantu ngeceki
 - *Link Video*: [YouTube]
 
 ## 🎯 Tujuan & Keterkaitan dengan SDGs  
-Proyek ini berkontribusi terhadap *SDG 3 dan 4yaitu **Quality Education dan Good Health and Well-being*.
+Proyek ini berkontribusi terhadap *SDG 3 dan 4* yaitu **Quality Education dan Good Health and Well-being*.
 TemanCekin* hadir di ranah edukasi yang memerhatikan kesehatan mental, terutama mahasiswa, dengan mengusung SDGs “Quality Education” serta “Good Health and Wellbeing”. TemanCekin* memberikan gambaran serta evaluasi kesehatan mental mahasiswa dengan compact sehingga dapat dipakai dengan mudah dan cepat.
 
 ## 🛠 Teknologi yang Digunakan  
-- *Framework ML/DL:* [TensorFlow/PyTorch/Scikit-Learn, dll.]  
+- *Framework ML/DL:* Scikit-Learn (model RandomForestRegressor)
 - *Dataset:* Student Habits vs Academic Performance: https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance   
 - *Deployment:* Streamlit
 
@@ -27,7 +27,7 @@ TemanCekin* hadir di ranah edukasi yang memerhatikan kesehatan mental, terutama 
 1. Clone repository ini:  
    bash
    git clone https://github.com/syahh-coder/Deploy_Capstone_Project
-   cd repository-name
+   cd Deploy_Capstone_Project
 
 2. Install dependencies:
 bash
@@ -35,17 +35,16 @@ pip install -r requirements.txt
 
 3. Jalankan model atau aplikasi
 bash
-streamlit run app.py  # Jika menggunakan Streamlit
-python app.py  # Jika menggunakan Flask
+streamlit run mentalhealth.py
 
 ## 🔗 Link Deployment
-[Aplikasi dapat diakses di sini: https://temancekin.streamlit.app/
+Aplikasi dapat diakses di sini: https://temancekin.streamlit.app/
 ## 📈 Hasil & Analisis
-*Performa Metrik Model* : MSE (Mean Squared Error)
+*Performa Metrik Model* : MSE (Mean Squared Error): 5,02
 
 *Kesimpulan*: 
 
 ## 👨‍💻 Tim Pengembang
 - Ukasyah - www.linkedin.com/in/ukasyah2005/ 
 - Naufal Hanif - http://www.linkedin.com/in/naufal-hanif-8a8162331
-- Nama 3 - [LinkedIn/GitHub]
+
