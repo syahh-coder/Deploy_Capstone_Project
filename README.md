@@ -20,8 +20,10 @@ TemanCekin* hadir di ranah edukasi yang memerhatikan kesehatan mental, terutama 
 - *Dataset:* Student Habits vs Academic Performance: https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance   
 - *Deployment:* Streamlit
 
-## 📊 Model & Metodologi  
-[Berikan penjelasan singkat tentang model yang digunakan, preprocessing data, arsitektur model, dan teknik evaluasi.]  
+## 📊 Model & Metodologi  :
+Model yang digunakan dalam proyek ini adalah RandomForestRegressor, sebuah algoritma ensemble learning yang terdiri dari banyak decision tree. Setiap pohon dalam model ini menghasilkan prediksi sendiri, lalu seluruh prediksi tersebut dirata-rata untuk menghasilkan output akhir. Pendekatan ini membuat RandomForestRegressor mampu menangani data yang kompleks dan non-linear serta lebih tahan terhadap overfitting. Pada bagian arsitektur, model ini dibangun dari sejumlah pohon keputusan yang masing-masing dilatih pada subset acak dari data, dengan kedalaman pohon yang dapat disesuaikan. Untuk mengukur performa model, digunakan Mean Squared Error (MSE) sebagai teknik evaluasi. MSE menghitung rata-rata selisih kuadrat antara nilai prediksi dan nilai sebenarnya, di mana semakin kecil nilai MSE, maka semakin baik akurasi prediksi yang dihasilkan oleh model.
+
+
 
 ## 🚀 Cara Menjalankan Proyek  
 1. Clone repository ini:  
@@ -40,11 +42,11 @@ streamlit run mentalhealth.py
 ## 🔗 Link Deployment
 Aplikasi dapat diakses di sini: https://temancekin.streamlit.app/
 ## 📈 Hasil & Analisis
-*Performa Metrik Model* : MSE (Mean Squared Error): 5,02
+*Performa Metrik Model* : MSE (Mean Squared Error): 5,02. sebenarnya pada saat train model, banyak model regresi yang lebih akurat dibanding RandomforestRegressor seperti RidgerRegressor dengan MSE 3,6 kemudian Linear Regression dengan 3,6 jg, hanya saja saat menampilkan prediksi hasilnya dapat mencapai lebih dari interval pada nilat target (rating mentalhealth), sebagai contoh pada Linear Regression hasil prediksi dapat mencapai 16,7/10. Disamping itu, pada saat menggunakan RandomForestRegressor hasilnya belum pernah mencapai lebih dari interval. Hal ini disebabkan, pada model lain hasil prediksi bisa menjadi liar (tak terbatas) sedangkan pada randomForest terbatas secara alami disebabkan Random Forest Regressor adalah ensemble dari banyak decision tree, Masing-masing tree memprediksi angka, dan hasil akhirnya adalah rata-rata dari semua prediksi tree Karena setiap tree-nya hanya memetakan ke nilai target yang pernah ada di data latih, maka Output cenderung berada di dalam rentang nilai-nilai di data training dan tidak ada prediksi "liar" seperti 16,7 kalau tidak ada rating 16,7 di data latih.
 
-*Kesimpulan*: 
+*Kesimpulan*: Model yang paling cocok untuk kasus menentukan rating mentalhealth adalah RandomForestRegressor disebabkan adanya batas alami yang menyebabkan hasil prediksi tidak melebihi maksimal rating.
 
-## 👨‍💻 Tim Pengembang
+## 👨‍💻 Tim Pengembang (SukaML)
 - Ukasyah - www.linkedin.com/in/ukasyah2005/ 
 - Naufal Hanif - http://www.linkedin.com/in/naufal-hanif-8a8162331
 
