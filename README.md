@@ -9,7 +9,7 @@ TemanCekin* adalah sebuah website yang akan menjadi teman untuk membantu ngeceki
 
 - *Video Presentation (10-15 menit)*: [Berisi penjelasan mendetail tentang teknis proyek, model, hasil, dan demo]
 
-- *Link Video*: [YouTube]
+- *Link Video*: https://youtu.be/EMC_uvavUYo
 
 ## 🎯 Tujuan & Keterkaitan dengan SDGs  
 Proyek ini berkontribusi terhadap *SDG 3 dan 4* yaitu **Quality Education dan Good Health and Well-being*.
